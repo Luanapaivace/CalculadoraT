@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Lógica Proposicional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculadora">
+        <input type="text" id="expressao" class="display">
+        <div class="botoes" id="botoes-letras"></div>
+        <div class="botoes">
+            <button class="operador-btn" onclick="inserir('¬')">¬</button>
+            <button class="operador-btn" onclick="inserir('∧')">∧</button>
+            <button class="operador-btn" onclick="inserir('∨')">∨</button>
+            <button class="operador-btn" onclick="inserir('⊕')">⊕</button>
+            <button class="operador-btn" onclick="inserir('→')">→</button>
+            <button class="operador-btn" onclick="inserir('↔')">↔</button>
+            <button class="operador-btn" onclick="inserir('(')">(</button>
+            <button class="operador-btn" onclick="inserir(')')">)</button>
+            <button class="limpar" onclick="limpar()">C</button>
+            <button class="limpar" onclick="apagar()">DEL</button>
+            <button class="igual" style="grid-column: span 2;" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <div id="resultado"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
